@@ -1,0 +1,57 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select {
+  width: 80%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.menuItemContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  padding-right: 1rem;
+  margin-bottom: -0.125rem;
+}
+
+.swapIconContainer {
+  padding: 1rem 1rem 0.5rem 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+// Animations
+.icon[rotate="1"] {
+  animation: rotate 220ms 1 cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.select[blink="1"] {
+  animation: reAppear 240ms 1 cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes reAppear {
+  40% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

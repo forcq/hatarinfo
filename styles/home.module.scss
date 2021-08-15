@@ -1,0 +1,23 @@
+.container {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.countrySelectorContainer {
+  padding: 0 0.25rem 2rem 0.5rem;
+  background-color: #3f51b5;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+
+  & > :first-child {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.borderContainer {
+  padding: 0.5rem;
+
+  .borderList {
+    margin-top: 1rem;
+  }
+}
